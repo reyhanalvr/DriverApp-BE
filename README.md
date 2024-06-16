@@ -14,17 +14,19 @@ Aplikasi ini mendukung pendaftaran pengguna, otentikasi dengan JWT, manajemen pe
 - Dokumentasi API dengan Swagger
 ```
 
-```
+
 ## Penggunaan
 
+```
 Setelah menjalankan server development (`python manage.py runserver`), Anda dapat mengakses aplikasi di `http://127.0.0.1:8000`.
 
 ```
 
-```
+
 ## Endpoint API
 
-### Endpoint Pengguna
+```
+### Endpoint User
 
 - **Mendaftar sebagai pengguna**
     - **URL**: `/api/register/`
@@ -106,8 +108,9 @@ Setelah menjalankan server development (`python manage.py runserver`), Anda dapa
     - **Authorization**: Bearer Token
 ```
 
-```
+
 ## Menjalankan Pengujian
 
+```
 Untuk menjalankan pengujian untuk proyek ini, Anda dapat menggunakan framework pengujian bawaan Django. Pastikan semua dependensi terinstal dan virtual environment diaktifkan.
 ```
