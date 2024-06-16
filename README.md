@@ -114,3 +114,10 @@ Setelah menjalankan server development (`python manage.py runserver`), Anda dapa
 ```
 Untuk menjalankan pengujian untuk proyek ini, Anda dapat menggunakan framework pengujian bawaan Django. Pastikan semua dependensi terinstal dan virtual environment diaktifkan.
 ```
+
+## Dokumentasi
+
+```
+Dokumentasi API tersedia melalui Swagger. Setelah menjalankan server development, Anda dapat mengakses dokumentasi di:
+- **Swagger UI**: `http://127.0.0.1:8000/swagger/`
+```
