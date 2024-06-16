@@ -28,10 +28,10 @@ Setelah menjalankan server development (`python manage.py runserver`), Anda dapa
 ```
 ### Endpoint User
 
-- **Mendaftar sebagai pengguna**
-    - **URL**: `/api/register/`
-    - **Method**: `POST`
-    - **Request Body**:
+- Mendaftar sebagai pengguna
+    - URL: `/api/register/`
+    - Method: `POST`
+    - Request Body:
       ```json
       {
           "username": "johndoe",
@@ -42,10 +42,10 @@ Setelah menjalankan server development (`python manage.py runserver`), Anda dapa
       }
       ```
 
-- **Login sebagai pengguna dan mendapatkan token JWT**
-    - **URL**: `/api/login/`
-    - **Method**: `POST`
-    - **Request Body**:
+- Login sebagai pengguna dan mendapatkan token JWT
+    - URL: `/api/login/`
+    - Method: `POST`
+    - Request Body:
       ```json
       {
           "username": "johndoe",
@@ -53,11 +53,11 @@ Setelah menjalankan server development (`python manage.py runserver`), Anda dapa
       }
       ```
 
-- **Membuat pesanan perjalanan (autentikasi diperlukan)**
-    - **URL**: `/api/trips/`
-    - **Method**: `POST`
-    - **Authorization**: Bearer Token
-    - **Request Body**:
+- Membuat pesanan perjalanan (autentikasi diperlukan)
+    - URL: `/api/trips/`
+    - Method: `POST`
+    - Authorization: Bearer Token
+    - Request Body:
       ```json
       {
           "pickup_location": "Bandung",
@@ -65,17 +65,17 @@ Setelah menjalankan server development (`python manage.py runserver`), Anda dapa
       }
       ```
 
-- **Melihat status pesanan perjalanan saat ini (autentikasi diperlukan)**
-    - **URL**: `/api/trips/status/`
-    - **Method**: `GET`
-    - **Authorization**: Bearer Token
+- Melihat status pesanan perjalanan saat ini (autentikasi diperlukan)
+    - URL: `/api/trips/status/`
+    - Method: `GET`
+    - Authorization: Bearer Token
 
 ### Endpoint Driver
 
-- **Mendaftar sebagai driver** (sama dengan pendaftaran pengguna tetapi spesifikkan `"role": "Driver"`)
-    - **URL**: `/api/register/`
-    - **Method**: `POST`
-    - **Request Body**:
+- Mendaftar sebagai driver** (sama dengan pendaftaran pengguna tetapi spesifikkan `"role": "Driver"`)
+    - URL: `/api/register/`
+    - Method: `POST`
+    - *equest Body:
       ```json
       {
           "username": "driver1",
@@ -86,10 +86,10 @@ Setelah menjalankan server development (`python manage.py runserver`), Anda dapa
       }
       ```
 
-- **Login sebagai driver dan mendapatkan token JWT**
-    - **URL**: `/api/login/`
-    - **Method**: `POST`
-    - **Request Body**:
+- Login sebagai driver dan mendapatkan token JWT
+    - URL: `/api/login/`
+    - Method: `POST`
+    - Request Body:
       ```json
       {
           "username": "driver1",
@@ -97,15 +97,15 @@ Setelah menjalankan server development (`python manage.py runserver`), Anda dapa
       }
       ```
 
-- **Melihat semua pesanan perjalanan yang tersedia (autentikasi diperlukan)**
-    - **URL**: `/api/driver/trips/`
-    - **Method**: `GET`
-    - **Authorization**: Bearer Token
+- Melihat semua pesanan perjalanan yang tersedia (autentikasi diperlukan)
+    - URL: `/api/driver/trips/`
+    - Method: `GET`
+    - Authorization: Bearer Token
 
-- **Menerima perjalanan (autentikasi diperlukan)**
-    - **URL**: `/api/driver/trips/<int:trip_id>/accept/`
-    - **Method**: `POST`
-    - **Authorization**: Bearer Token
+- Menerima perjalanan (autentikasi diperlukan)
+    - URL: `/api/driver/trips/<int:trip_id>/accept/`
+    - Method: `POST`
+    - Authorization: Bearer Token
 ```
 
 
@@ -119,5 +119,5 @@ Untuk menjalankan pengujian untuk proyek ini, Anda dapat menggunakan framework p
 
 ```
 Dokumentasi API tersedia melalui Swagger. Setelah menjalankan server development, Anda dapat mengakses dokumentasi di:
-- **Swagger UI**: `http://127.0.0.1:8000/swagger/`
+- Swagger UI: `http://127.0.0.1:8000/swagger/`
 ```
