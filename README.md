@@ -3,9 +3,10 @@
 Ini adalah aplikasi backend untuk Driver App, dibuat menggunakan Django dan Django REST Framework. 
 Aplikasi ini mendukung pendaftaran pengguna, otentikasi dengan JWT, manajemen perjalanan untuk pengguna, dan penerimaan perjalanan untuk driver.
 
-```
+
 ## Fitur
 
+```
 - Pendaftaran dan otentikasi pengguna dengan JWT
 - Kontrol akses berbasis peran (User dan Driver)
 - Manajemen perjalanan (membuat, melihat status, menerima perjalanan)
